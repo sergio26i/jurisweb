@@ -20,9 +20,9 @@ app.get("/termos-de-uso", function(req, res){
 
 // Servidor //
 
-app.listen(8080, function(){
-    console.log("O servidor está funcionando através da URL http://localhost:3000");
+var port = process.env.PORT || 3000;
+app.listen(port, function () {
+    console.log('Umbler listening on port %s', port);
 });
-app.set('port', process.env.PORT || 8080);
 
 
