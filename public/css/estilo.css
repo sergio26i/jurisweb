@@ -1,0 +1,514 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #000000;
+
+}
+body{
+    color: #fff; /*cores: d37f4e, f3d96c, 2b9c95, 1c98c3*/
+    width: 100%;
+    font-family: 'prompt';
+    font-size: 14px;
+}
+
+/*********************** Cabeçalho ************************/
+
+#cabecalho{
+    width: 100%;
+    position: fixed;
+}
+.sociais-icones ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c98c3;
+    padding: .4rem 0;
+}
+.sociais-icones li{
+    display: inline-block;
+    margin-right: 1.6rem;
+}
+.sociais-icones li a{
+    color: #ffffff;
+}
+.sociais-icones li a:hover{
+    opacity: .7;
+}
+.menu-cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #031941;
+    padding: 0.5rem 3rem;
+    flex-grow: 1;
+}
+.logotipo img{
+    width: 150px;
+}
+.lista-itens-menu{
+    display: flex;
+    align-items: center;
+}
+.lista-itens-menu ul{
+    display: flex;
+}
+.lista-itens-menu li{
+    margin-right: 3rem;
+}
+.lista-itens-menu li a{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 200;
+    border: 1px solid #ffffff;
+    border-bottom-left-radius: 1.5rem;
+    padding: 0.3rem 1rem;
+}
+.lista-itens-menu li a:hover{
+    background-color: #1c3769;
+}
+.btn-informa .btn-informa-btn{
+    display: inline-block;
+    background-color: #f3d96c;
+    color: #000000;
+    padding: 0.2rem 1.5rem;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+.btn-informa .btn-informa-btn:hover{
+    display: block;
+    background-color: #f3e29c;
+}
+/*********************** Cabeçalho ************************/
+
+/******************* Prêmio Jurisquesti ********************/
+#premio-jurisquesti{
+    width: 100%;
+}
+.lanca-premio{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 12rem 6rem 5rem 6rem;
+    background-color: transparent;
+    background-image: url("../img/banner\ de\ fundo.png");
+    background-size: cover;
+}
+.lanca-premio .premio-artigo{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 3.5rem;
+}
+.lanca-juris{
+    display: flex;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: .8rem;
+}
+.premio-artigo .seara-juridica{
+    color: #ffffff;
+    margin-right: 12rem;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 1rem;
+    line-height: 1.8rem;
+}
+.banner-premio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    width: 300px;
+}
+.banner-premio .btn-premio{
+    display: inline-block;
+    background-color: #f3d96c;
+    color: #000000;
+    padding: 0.2rem 1.5rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+.banner-premio .btn-premio:hover{
+    background-color: #f3e29c;
+}
+/******************* Prêmio Jurisquesti ********************/
+
+/****************** Serviços & Produtos *********************/
+#servicos-e-produtos{
+    width: 100%;
+    background-color: rgb(216, 216, 216);
+}
+.produtos-titulo .titulo-produtos{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 1rem;
+}
+.produtos-lista{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    padding: 2rem 6rem;
+    gap: 1rem;
+    align-items: stretch;
+}
+.premia-eventos{
+    display: block;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 3rem;
+    border-radius: 1rem;
+}
+.premia-eventos img{
+    background-color: #031941;
+    width: 60px;
+    align-self: center;
+    border-radius: 3rem;
+    padding: .5rem;
+}
+.titulo-lista{
+    margin-top: .8rem;
+}
+.lista-parag{
+    margin-top: .8rem;
+}
+.btn-lista{
+    display: inline-block;
+    background-color: #d37f4e;
+    color: #ffffff;
+    padding: 0.2rem 1.5rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+.btn-lista:hover{
+    background-color: #d89269;
+}
+.revista-cientifica{
+    display: block;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 3rem;
+    border-radius: 1rem;
+}
+.revista-cientifica img{
+    background-color: #031941;
+    width: 60px;
+    align-self: center;
+    border-radius: 3rem;
+    padding: .5rem;
+}
+.titulo-lista{
+    margin-top: .8rem;
+}
+.lista-parag{
+    margin-top: .8rem;
+}
+.btn-lista{
+    display: inline-block;
+    background-color: #d37f4e;
+    color: #ffffff;
+    padding: 0.2rem 1.5rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+.btn-lista:hover{
+    background-color: #d89269;
+}
+.aplicativo-jurisquesti{
+    display: block;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 3rem;
+    border-radius: 1rem;
+}
+.aplicativo-jurisquesti img{
+    background-color: #031941;
+    width: 60px;
+    align-self: center;
+    border-radius: 3rem;
+    padding: .5rem;
+}
+.titulo-lista{
+    margin-top: .8rem;
+}
+.lista-parag{
+    margin-top: .8rem;
+}
+.btn-lista{
+    display: inline-block;
+    background-color: #d37f4e;
+    color: #ffffff;
+    padding: 0.2rem 1.5rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+.btn-lista:hover{
+    background-color: #d89269;
+}
+
+
+/****************** Serviços & Produtos *********************/
+
+/**************** Cadastro de Informações *******************/
+#cadastro-informacoes{
+    width: 100%;
+}
+.informacoes-cadastro{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1c98c3;
+    padding: 2rem 0;
+}
+.preencha-campos .preencha-campos-1{
+    color: #ffffff;
+}
+.ser-avisado .novidades{
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+.nome{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+}
+input[type=text]{
+    color: #ffffff;
+    background-color: #1c98c3;
+    font-family: 'prompt';
+    font-weight: 300;
+    border: 1px solid #ffffff;
+    border-radius: 2rem;
+    padding: 0.3rem 4rem;
+    outline: none;
+}
+.email{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+}
+input[type=submit]{
+    display: inline-block;
+    background-color: #f3d96c;
+    color: #000000;
+    font-size: 14px;
+    font-family: 'prompt';
+    font-weight: 700;
+    padding: 0.2rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+}
+input[type=submit]:hover{
+        background-color: #f3e29c;
+        cursor: pointer;
+}
+
+/**************** Cadastro de Informações *******************/
+
+/************************ Rodapé ****************************/
+
+#rodape{
+    width: 100%;
+    background-color: #031941;
+}
+.rodape-jurisquesti{
+    display: flex;
+    align-items: center;
+}
+.logo-icone-seguro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-icone-seguro ul{
+    display: flex;
+    padding-right: 3.5rem;
+}
+.logo-icone-seguro ul li{
+    display: inline-block;
+    margin-right: 1.6rem;
+}
+.logo-icone-seguro ul li a{
+    color: #ffffff;
+}
+.logo-icone-seguro ul li a:hover{
+    opacity: .7;
+}
+.seguro-cadeado{
+    width: 5%;
+    height: 5%;
+}
+hr:nth-child(2){
+    width: 10%;
+    margin: 0 auto;
+}
+.termos-e-privacidade{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.termos-e-privacidade ul{
+    display: flex;
+    margin: 1rem 0 .2rem 0;
+}
+.termos-e-privacidade ul li a{
+    color: #ffffff;
+}
+.dir-autorais{
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+/*************************** MEDIA QUERIES ***************************/
+@media(max-width: 1180px) {
+    .menu-cabecalho{
+        flex-direction: column;
+    }
+    .btn-informa{
+        margin: 1rem 0;
+    }
+    .lanca-premio{
+        padding-top: 17.2rem;
+    }
+    .lista-itens-menu li{
+        margin-right: .5rem;
+    }
+    .lista-itens-menu li a{
+        border: none;
+        border-right: 1px solid #ffffff;
+    }
+    .lista-itens-menu li a:not(:last-child){
+        border-right: none;
+    }
+
+}
+
+@media(max-width: 990px){
+    .lanca-premio{
+        padding: 12rem 2rem 5rem 2rem;
+    }
+    .lanca-premio .seara-juridica{
+        margin-right: 3rem;
+    }
+    .premio-artigo{
+        padding-top: 5rem;
+    }
+    .lanca-juris{
+        line-height: 2rem;
+    }
+    .banner-premio{
+        padding-top: 5.5rem;
+    }
+    .produtos-lista{
+        padding: 2rem 2rem;
+    }
+    .produtos-lista{
+        grid-template-columns: 1fr 1fr;
+    }
+    .informacoes-cadastro{
+        margin: 0 auto;
+        padding: 2rem 2rem 2rem 3.1rem;
+    }
+    .preencha-campos .preencha-campos-1{
+        color: #ffffff;
+        margin-right: 3rem;
+    }
+}
+
+@media(max-width: 690px){
+    .lista-itens-menu li{
+        margin-right: .2rem;
+    }
+    .lanca-premio{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .premio-artigo{
+        padding-top: 3rem;
+    }
+    .banner-premio{
+        padding-top: 5.1rem;
+    }
+}
+
+@media(max-width: 500px){
+    .sociais-icones ul{
+        padding-left: 1.5rem;
+    }
+    .logotipo img{
+        border-bottom: 1px solid #ffffff;
+    }
+    .lista-itens-menu ul{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .lista-itens-menu li a{
+        border-right: none;
+    }
+    .lanca-premio{
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 14rem;
+    }
+    .lanca-premio .seara-juridica{
+        margin-right: auto;
+    }
+    .lanca-juris{
+        text-align: center;
+    }
+    .banner-premio{
+        margin-top: -1rem;
+    }
+    .produtos-lista{
+        grid-template-columns: 1fr;
+        padding: 2rem 4rem;
+    }
+    .informacoes-cadastro{
+        flex-direction: column;
+    }
+    .preencha-campos{
+        margin-bottom: 2rem;
+        padding-left: 1rem;
+    }
+    .logo-icone-seguro{
+        flex-direction: column;
+    }
+    .logotipo img{
+        padding-left: 3rem;
+    }
+    hr{
+        display: none;
+    }
+    .logo-icone-seguro ul{
+        padding-left: 5rem;
+    }
+    .logo-icone-seguro ul li{
+        margin-right: none;
+    }
+    .seguro-cadeado{
+        margin-top: 1rem;
+    }
+    .termos-e-privacidade{
+        padding: 0 2rem;
+    }
+}
+
+/******************************************************/
