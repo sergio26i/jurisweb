@@ -20,7 +20,7 @@ app.get("/termos-de-uso", function(req, res){
 
 // Servidor //
 
-var port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, function () {
     console.log('Umbler listening on port %s', port);
 });

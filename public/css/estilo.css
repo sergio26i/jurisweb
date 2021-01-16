@@ -351,8 +351,8 @@ input[type=submit]:hover{
     opacity: .7;
 }
 .seguro-cadeado{
-    width: 5%;
-    height: 5%;
+    width: 30px;
+    height: 40px;
 }
 hr:nth-child(2){
     width: 10%;
@@ -428,7 +428,6 @@ hr:nth-child(2){
     }
     .preencha-campos .preencha-campos-1{
         color: #ffffff;
-        margin-right: 3rem;
     }
 }
 
@@ -454,6 +453,7 @@ hr:nth-child(2){
     }
     .logotipo img{
         border-bottom: 1px solid #ffffff;
+        justify-content: center;
     }
     .lista-itens-menu ul{
         flex-direction: column;
@@ -464,8 +464,8 @@ hr:nth-child(2){
         border-right: none;
     }
     .lanca-premio{
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         padding-top: 14rem;
     }
     .lanca-premio .seara-juridica{
@@ -479,21 +479,28 @@ hr:nth-child(2){
     }
     .produtos-lista{
         grid-template-columns: 1fr;
-        padding: 2rem 4rem;
+        padding: 2rem 2rem;
+    }
+    .premia-eventos{
+        margin-bottom: .3rem;
+    }
+    .revista-cientifica{
+        margin-bottom: .3rem; 
+    }
+    .aplicativo-jurisquesti{
+        margin-bottom: .3rem; 
     }
     .informacoes-cadastro{
         flex-direction: column;
+        justify-content: center;
     }
     .preencha-campos{
         margin-bottom: 2rem;
-        padding-left: 1rem;
     }
     .logo-icone-seguro{
         flex-direction: column;
     }
-    .logotipo img{
-        padding-left: 3rem;
-    }
+    
     hr{
         display: none;
     }
@@ -507,7 +514,13 @@ hr:nth-child(2){
         margin-top: 1rem;
     }
     .termos-e-privacidade{
-        padding: 0 2rem;
+        padding: 0 3rem;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .dir-autorais{
+        padding: 0 3rem 2rem 3rem;
     }
 }
 
