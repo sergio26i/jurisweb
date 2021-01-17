@@ -424,7 +424,7 @@ hr:nth-child(2){
     }
     .informacoes-cadastro{
         margin: 0 auto;
-        padding: 2rem 2rem 2rem 3.1rem;
+        padding: 2rem 2rem 2rem 2rem;
     }
     .preencha-campos .preencha-campos-1{
         color: #ffffff;
@@ -495,12 +495,14 @@ hr:nth-child(2){
         justify-content: center;
     }
     .preencha-campos{
-        margin-bottom: 2rem;
+        justify-content: center;
+        margin-bottom: 1.3rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 3px solid #f3d96c;
     }
     .logo-icone-seguro{
         flex-direction: column;
     }
-    
     hr{
         display: none;
     }
