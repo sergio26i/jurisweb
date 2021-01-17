@@ -120,7 +120,7 @@ body{
     font-size: 15px;
     font-weight: 300;
     margin-top: 1rem;
-    line-height: 1.8rem;
+    line-height: 1.7rem;
 }
 .banner-premio{
     display: flex;
@@ -351,8 +351,8 @@ input[type=submit]:hover{
     opacity: .7;
 }
 .seguro-cadeado{
-    width: 30px;
-    height: 40px;
+    width: 50px;
+    height: 60px;
 }
 hr:nth-child(2){
     width: 10%;
@@ -512,14 +512,18 @@ hr:nth-child(2){
     .logo-icone-seguro ul li{
         margin-right: none;
     }
-    .seguro-cadeado{
-        margin-top: 1rem;
-    }
     .termos-e-privacidade{
         padding: 0 3rem;
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    }
+    .termos-e-privacidade ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0 3rem 1rem 3rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid #ffffff;
     }
     .dir-autorais{
         padding: 0 3rem 2rem 3rem;
