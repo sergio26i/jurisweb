@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #000000;
+}
+body{
+    color: #000000; /*cores: d37f4e, f3d96c, 2b9c95, 1c98c3*/
+    width: 100%;
+    font-family: 'prompt';
+    font-size: 14px;
+}
+
+/*********************** Cabeçalho ************************/
+
+#cabecalho{
+    width: 100%;
+    position: fixed;
+}
+.sociais-icones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #1c98c3;
+    padding: .4rem 0;
+}
+.sociais-icones ul{
+    display: flex;
+    padding: .4rem 0;
+    margin-left: 1.5rem;
+}
+.sociais-icones li{
+    display: inline-block;
+    margin-right: 1.6rem;
+}
+.sociais-icones li a{
+    color: #ffffff;
+}
+.sociais-icones li a:hover{
+    opacity: .7;
+}
+.menu-cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #031941;
+    padding: 0.5rem 3rem;
+}
+.logotipo{
+    display: flex;
+}
+.logotipo img{
+    width: 150px;
+    padding-right: 1.2rem;
+}
+
+/*********************** Cabeçalho ************************/
+
+/****************** Divisória de Politica de Privacidade ******************/
+
+#politica-de-privacidade{
+    width: 100%;
+}
+.privacidade-politica{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 11rem 10rem 1rem 10rem;
+}
+.privacidade-titulo{
+    color: #2b9c95;
+    text-align: center;
+    padding: 0 2rem 1rem 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #2b9c95;
+}
+.privacidade{
+    color: #2b9c95;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.privacidade-parag{
+    margin-bottom: 1.7rem;
+    line-height: 1.7rem;
+}
+
+/****************** Divisória de Politica de Privacidade ******************/
+
+/******************************** Rodapé **********************************/
+
+#rodape{
+    width: 100%;
+    background-color: #031941;
+}
+.rodape-jurisquesti{
+    display: flex;
+    align-items: center;
+}
+.logo-icone-seguro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-icone-seguro ul{
+    display: flex;
+    padding-right: 3.5rem;
+}
+.logo-icone-seguro ul li{
+    display: inline-block;
+    margin-right: 1.6rem;
+}
+.logo-icone-seguro ul li a{
+    color: #ffffff;
+}
+.logo-icone-seguro ul li a:hover{
+    opacity: .7;
+}
+.seguro-cadeado{
+    width: 50px;
+    height: 60px;
+}
+hr:nth-child(2){
+    width: 10%;
+    margin: 0 auto;
+}
+.termos-e-privacidade{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.termos-e-privacidade ul{
+    display: flex;
+    margin: 1rem 0 .2rem 0;
+}
+.termos-e-privacidade ul li a{
+    color: #ffffff;
+}
+.dir-autorais{
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+/****************************** Rodapé *******************************/
+
+/*************************** MEDIA QUERIES ***************************/
+
+@media(max-width: 1180px){
+    .privacidade-politica{
+        padding: 11rem 2rem 2rem 2rem;
+    }
+}
+
+@media(max-width: 500px){
+    .sociais-icones ul{
+        margin-left: 1.3rem;
+    }
+    .logotipo img{
+        margin-left: 1rem;
+    }
+    .logo-icone-seguro{
+        flex-direction: column;
+        justify-content: center;
+    }
+    hr{
+        display: none;
+    }
+    .logo-icone-seguro ul{
+        padding-left: 5rem;
+    }
+    .logo-icone-seguro ul li{
+        margin-right: none;
+    }
+    .termos-e-privacidade{
+        padding: 0 3rem;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .termos-e-privacidade ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0 3rem 1rem 3rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid #ffffff;
+    }
+    .dir-autorais{
+        padding: 0 3rem 2rem 3rem;
+    }
+}

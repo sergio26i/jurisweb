@@ -18,6 +18,10 @@ app.get("/termos-de-uso", function(req, res){
     res.sendFile(__dirname + "/content/termos-de-uso.html")
 });
 
+app.get("/politica-de-privacidade", function(req, res){
+    res.sendFile(__dirname + "/content/politica-de-privacidade.html")
+});
+
 // Servidor //
 
 const port = process.env.PORT || 3000;

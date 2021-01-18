@@ -67,7 +67,9 @@ Modificações
 O Jurisquesti pode revisar estes termos de serviço do site a qualquer momento, sem aviso prévio. Ao usar este site, você concorda em ficar vinculado à versão atual desses termos de serviço.
 Lei aplicável
 Estes termos e condições são regidos e interpretados de acordo com as leis do Jurisquesti e você se submete irrevogavelmente à jurisdição exclusiva dos tribunais naquele estado ou localidade.
-Política Privacidade
+
+Política de Privacidade
+
 A sua privacidade é importante para nós. É política do Jurisquesti respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site Jurisquesti, e outros sites que possuímos e operamos.
 Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.
 Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis ​​para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.
