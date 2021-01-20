@@ -27,6 +27,11 @@ app.get("/politica-de-privacidade", function(req, res){
     res.render("politica-de-privacidade")
 });
 
+app.get("/aviso-de-envio", function(req, res){
+    res.render("aviso-de-envio")
+});
+
+
 // Servidor //
 
 app.listen(port, function () {

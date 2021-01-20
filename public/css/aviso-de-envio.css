@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #000000;
+
+}
+body{
+    color: #fff; /*cores: d37f4e, f3d96c, 2b9c95, 1c98c3*/
+    width: 100%;
+    font-family: 'prompt';
+    font-size: 14px;
+}
+
+/*********************** Cabeçalho ************************/
+
+#cabecalho{
+    width: 100%;
+    position: fixed;
+}
+.sociais-icones ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c98c3;
+    padding: .4rem 0;
+}
+.sociais-icones li{
+    display: inline-block;
+    margin-right: 1.6rem;
+}
+.sociais-icones li a{
+    color: #ffffff;
+}
+.sociais-icones li a:hover{
+    opacity: .7;
+}
+.menu-cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #031941;
+    padding: 0.5rem 3rem;
+    flex-grow: 1;
+}
+.logotipo img{
+    width: 150px;
+}
+.btn-informa .btn-informa-btn{
+    display: inline-block;
+    background-color: #f3d96c;
+    color: #000000;
+    padding: 0.2rem 1.5rem;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+.btn-informa .btn-informa-btn:hover{
+    display: block;
+    background-color: #f3e29c;
+}
+
+/*********************** Cabeçalho ************************/
+
+/***************** Confirmação do Envio *******************/
+
+#confirma-formulario{
+    width: 100%;                                                   
+}
+.caixa-dados{
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 13rem 10rem 11rem 10rem;
+}
+.dados-confirma{
+    display: flex;
+    flex-direction: column;
+    background-color: #2b9c95;
+    padding: 4rem 3rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);;
+}
+.dados-confirma .envio-dados{
+    color: #ffffff;
+    font-size: 24px;
+}
+.dados-confirma .envio-confirma{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+}
+.icone-confirma{
+    display: flex;
+    justify-content: center;
+}
+.icone-confirma img{
+    width: 100px;
+    align-self: center;
+}
+
+/************************ Rodapé ****************************/
+
+#rodape{
+    width: 100%;
+    background-color: #031941;
+}
+.rodape-jurisquesti{
+    display: flex;
+    align-items: center;
+}
+.logo-icone-seguro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-icone-seguro ul{
+    display: flex;
+    padding-right: 3.5rem;
+}
+.logo-icone-seguro ul li{
+    display: inline-block;
+    margin-right: 1.6rem;
+}
+.logo-icone-seguro ul li a{
+    color: #ffffff;
+}
+.logo-icone-seguro ul li a:hover{
+    opacity: .7;
+}
+.seguro-cadeado{
+    width: 50px;
+    height: 60px;
+}
+hr:nth-child(2){
+    width: 10%;
+    margin: 0 auto;
+}
+.termos-e-privacidade{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.termos-e-privacidade ul{
+    display: flex;
+    margin: 1rem 0 .2rem 0;
+}
+.termos-e-privacidade ul li a{
+    color: #ffffff;
+}
+.dir-autorais{
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+/************************ Rodapé ****************************/

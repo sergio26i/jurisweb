@@ -484,11 +484,20 @@ hr:nth-child(2){
     .premia-eventos{
         margin-bottom: .3rem;
     }
+    .premia-eventos img{
+        width: 70px;
+    }
     .revista-cientifica{
         margin-bottom: .3rem; 
     }
+    .revista-cientifica img{
+        width: 70px;
+    }
     .aplicativo-jurisquesti{
         margin-bottom: .3rem; 
+    }
+    .aplicativo-jurisquesti img{
+        width: 70px;
     }
     .informacoes-cadastro{
         flex-direction: column;
