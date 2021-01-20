@@ -7,7 +7,7 @@ const app = express();
 const path = require("path");
 const port = process.env.PORT || 3000;
 
-// Body-Parsern //
+// Body-Parser //
 
 const urlencodedParser = bodyParser.urlencoded({ extended: false});
 
@@ -33,10 +33,9 @@ app.get("/politica-de-privacidade", function(req, res){
     res.render("politica-de-privacidade")
 });
 
-app.post("/aviso-de-envio", urlencodedParser, function(req, res){
-    res.json(req.body)
+app.post("/", urlencodedParser, function (req, res) {
+    res.render("aviso-de-envio");
 });
-
 
 // Servidor //
 
