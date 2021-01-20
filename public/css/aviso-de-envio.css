@@ -30,10 +30,10 @@ body{
 }
 .sociais-icones li{
     display: inline-block;
-    margin-right: 1.6rem;
 }
 .sociais-icones li a{
     color: #ffffff;
+    margin-right: 1.6rem;
 }
 .sociais-icones li a:hover{
     opacity: .7;
@@ -44,7 +44,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: #031941;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 5rem;
     flex-grow: 1;
 }
 .logotipo img{
@@ -82,7 +82,7 @@ body{
     flex-direction: column;
     background-color: #2b9c95;
     padding: 4rem 3rem;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);;
+    box-shadow: 2px 2px 2px 2px rgba(0.1, 0.1, 0.1, 0.1);;
 }
 .dados-confirma .envio-dados{
     color: #ffffff;
@@ -159,3 +159,54 @@ hr:nth-child(2){
 }
 
 /************************ Rodapé ****************************/
+
+/*************************** MEDIA QUERIES ***************************/
+
+@media(max-width:768px){
+    .envio-dados{
+        margin-bottom: 1rem;
+    }
+}
+
+@media(max-width: 500px){
+    .sociais-icones ul{
+        padding-left: 1.5rem;
+
+    }
+    .menu-cabecalho{
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+    .caixa-dados{
+        padding: 16rem 2rem 11rem 2rem;
+    }
+    .logo-icone-seguro{
+        flex-direction: column;
+    }
+    hr{
+        display: none;
+    }
+    .logo-icone-seguro ul{
+        padding-left: 5rem;
+    }
+    .logo-icone-seguro ul li{
+        margin-right: none;
+    }
+    .termos-e-privacidade{
+        padding: 0 3rem;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .termos-e-privacidade ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0 3rem 1rem 3rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid #ffffff;
+    }
+    .dir-autorais{
+        padding: 0 3rem 2rem 3rem;
+    }
+}
+

@@ -41,10 +41,10 @@ body{
 .menu-cabecalho{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #031941;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 5.8rem;
     flex-grow: 1;
 }
 .logotipo img{
@@ -448,6 +448,9 @@ hr:nth-child(2){
 }
 
 @media(max-width: 500px){
+    .menu-cabecalho{
+        padding: 0.5rem 3rem;
+    }
     .sociais-icones ul{
         padding-left: 1.5rem;
     }

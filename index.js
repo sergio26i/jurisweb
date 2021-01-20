@@ -1,9 +1,15 @@
 // Modules //
 
 const express = require("express");
+const bodyParser = require('body-parser');
+const { check, validationResult } = require('express-validator');
 const app = express();
 const path = require("path");
 const port = process.env.PORT || 3000;
+
+// Body-Parsern //
+
+const urlencodedParser = bodyParser.urlencoded({ extended: false});
 
 // EJS //
 
@@ -27,8 +33,8 @@ app.get("/politica-de-privacidade", function(req, res){
     res.render("politica-de-privacidade")
 });
 
-app.get("/aviso-de-envio", function(req, res){
-    res.render("aviso-de-envio")
+app.post("/aviso-de-envio", urlencodedParser, function(req, res){
+    res.json(req.body)
 });
 
 
