@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 
 // Body-Parser //
 
-const urlencodedParser = bodyParser.urlencoded({ extended: false});
+const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 // EJS //
 
@@ -33,8 +33,9 @@ app.get("/politica-de-privacidade", function(req, res){
     res.render("politica-de-privacidade")
 });
 
-app.post("/", urlencodedParser, function (req, res) {
-    res.render("aviso-de-envio");
+app.post("/", urlencodedParser, function(req, res){
+    console.log(req.body);
+    res.render("aviso-de-envio")
 });
 
 // Servidor //

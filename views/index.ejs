@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap" rel="stylesheet">
         <title>Jurisquesti - O Direito em Evolução!</title>
+        <script defer src = "js/validaformulario.js"></script>
     </head>
 
     <body>
@@ -108,11 +109,12 @@
                     </div>
                     <div class = "ser-avisado">
                         <h1 class = "novidades">Quero ser avisado(a) das novidades!</h1>
-                        <form action = "/" method = "POST">
+                        <div id = "error"></div>
+                        <form action = "/" method = "POST" id = "form">
                             <label for="name" class = "nome">Nome</label><br>
-                            <input type="text" id="nome" name="name"><br>
+                            <input type="text" id="name" name="name" required><br>
                             <label for="email" class = "email">Email</label><br>
-                            <input type="text" id="email" name="email"><br><br>
+                            <input type="text" id="email" name="email" required><br><br>
                             <input type="submit" value="Enviar Dados">
                           </form>
                     </div>
