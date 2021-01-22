@@ -287,7 +287,17 @@ img{
     font-size: 18px;
     font-weight: 300;
 }
-input[type=text]{
+input[type=name]{
+    color: #ffffff;
+    background-color: #1c98c3;
+    font-family: 'prompt';
+    font-weight: 300;
+    border: 1px solid #ffffff;
+    border-radius: 2rem;
+    padding: 0.3rem 4rem;
+    outline: none;
+}
+input[type=email]{
     color: #ffffff;
     background-color: #1c98c3;
     font-family: 'prompt';

@@ -11,5 +11,9 @@ form.addEventListener("submit", (e) => {
     if (email.value === '' || email.value == null) {
         messages.push("Por favor, adicione um Email válido!")
     }
+    if (!email.checkValidity()){
+        error.innerHTML = "Email Inválido";
+    }
 });
+
 
