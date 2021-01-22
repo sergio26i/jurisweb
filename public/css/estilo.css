@@ -142,9 +142,24 @@ img{
 .banner-premio .btn-premio:hover{
     background-color: #f3e29c;
 }
+/*
+.acesso-telegram{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.acesso-telegram .telegram-canal{
+    position: fixed;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-content: flex-start;
+    align-self: flex-end;/* 
+}
 /******************* Prêmio Jurisquesti ********************/
 
 /****************** Serviços & Produtos *********************/
+
 #servicos-e-produtos{
     width: 100%;
     background-color: rgb(216, 216, 216);
@@ -269,11 +284,11 @@ img{
 }
 .informacoes-cadastro{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
     background-color: #1c98c3;
-    padding: 2rem 0;
+    padding: 2rem 5.8rem;
 }
 .preencha-campos .preencha-campos-1{
     color: #ffffff;
@@ -343,8 +358,9 @@ input[type=submit]:hover{
 .logo-icone-seguro{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 5.8rem;
 }
 .logo-icone-seguro ul{
     display: flex;
@@ -454,6 +470,16 @@ hr:nth-child(2){
     }
     .banner-premio{
         padding-top: 5.1rem;
+    }
+    .logo-icone-seguro{
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+    .logo-icone-seguro ul{
+        justify-content: center;
+        align-self: center;
+        padding-left: 4.7rem;
     }
 }
 
