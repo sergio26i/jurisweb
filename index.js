@@ -3,22 +3,9 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const { check, validationResult } = require('express-validator');
-const mongoose = require("mongoose");
 const app = express();
 const path = require("path");
 const port = process.env.PORT || 3000;
-
-// Mongoose //
-
-require("./models/lista")
-const Lista = mongoose.model("listas")
-
-mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost/lista").then(() => {
-    console.log("Conectado ao Mongo")
-}).catch((err) => {
-    console.log("Erro ao se conectar:" +err)
-})
 
 // Body-Parser //
 
@@ -47,22 +34,14 @@ app.get("/politica-de-privacidade", function(req, res){
 });
 
 app.post("/", urlencodedParser, function(req, res){
-    console.log(req.body);
-    res.render("aviso-de-envio")
-});
 
-app.post("/", function(req, res){
-    const novaLista = {
+    contatos = {
         name: req.body.name,
         email: req.body.email
     }
-
-    new Lista(novaLista).save().then(() => {
-        console.log("Lista Salva com Sucesso!")
-    }).catch((err) => {
-        console.log("Erro ao salvar lista!")
-    })
-})
+    console.log(req.body);
+    res.render("aviso-de-envio")
+});
 
 // Servidor //
 
