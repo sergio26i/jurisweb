@@ -12,3 +12,4 @@ const Contact = db.sequelize.define('contatos', {
 //Contact.sync({force: true});//
 
 module.exports = Contact
+
