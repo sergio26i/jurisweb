@@ -509,9 +509,21 @@ hr:nth-child(2){
     }
     .lanca-premio .seara-juridica{
         margin-right: auto;
+        border-left: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .lanca-juris{
         text-align: center;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.5rem;
+        padding-top: .8rem;
+        padding-left: .8rem;
+        background-color: #031941;
+        border-top-left-radius: 4rem;
+        border-bottom-right-radius: 4rem;
     }
     .banner-premio{
         margin-top: -1rem;
