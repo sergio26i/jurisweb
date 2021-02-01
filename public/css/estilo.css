@@ -72,6 +72,9 @@ body{
 .lista-itens-menu li a:hover{
     background-color: #1c3769;
 }
+.btn-informa i{
+    margin-right: 0.5rem;
+}
 .btn-informa .btn-informa-btn{
     display: inline-block;
     background-color: #f3d96c;
@@ -106,6 +109,10 @@ body{
     text-align: left;
     margin-top: 3.5rem;
 }
+.lanca-juris i{
+    color: #ffffff;
+    margin-right: 1.5rem;
+}
 .lanca-juris{
     display: flex;
     color: #ffffff;
@@ -116,11 +123,18 @@ body{
 }
 .premio-artigo .seara-juridica{
     color: #ffffff;
-    margin-right: 12rem;
+    margin: 0 12rem 0 0;
     font-size: 15px;
     font-weight: 300;
-    margin-top: 1rem;
     line-height: 1.7rem;
+}
+.premia-artigo-seta{
+    display: flex;
+    justify-content: center;
+}
+.premia-artigo-seta i{
+    color: #ffffff;
+    margin-top: 1.5rem;
 }
 .banner-premio{
     display: flex;
@@ -129,6 +143,9 @@ body{
 }
 img{
     width: 300px;
+}
+.banner-premio .btn-premio i{
+    margin-right: 0.5rem;
 }
 .banner-premio .btn-premio{
     display: inline-block;
@@ -197,6 +214,10 @@ img{
 }
 .lista-parag{
     margin-top: .8rem;
+}
+.btn-lista i{
+    color: #ffffff;
+    margin-right: 0.5rem;
 }
 .btn-lista{
     display: inline-block;
@@ -289,6 +310,17 @@ img{
     align-items: center;
     background-color: #1c98c3;
     padding: 2rem 5.8rem;
+
+}
+.envelope{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+.envelope i{
+    color: #ffffff;
+    cursor: pointer;
 }
 .preencha-campos .preencha-campos-1{
     color: #ffffff;
@@ -327,7 +359,10 @@ input[type=email]{
     font-size: 18px;
     font-weight: 300;
 }
-input[type=submit]{
+button[type=submit] i{
+    margin-left: 0.5rem;
+}
+button[type=submit]{
     display: inline-block;
     background-color: #f3d96c;
     color: #000000;
@@ -337,8 +372,9 @@ input[type=submit]{
     padding: 0.2rem 1.5rem;
     border-radius: 1rem;
     border: none;
+    cursor: pointer;
 }
-input[type=submit]:hover{
+button[type=submit]:hover{
         background-color: #f3e29c;
         cursor: pointer;
 }
@@ -364,7 +400,7 @@ input[type=submit]:hover{
 }
 .logo-icone-seguro ul{
     display: flex;
-    padding-right: 3.5rem;
+    padding-right: 4.5rem;
 }
 .logo-icone-seguro ul li{
     display: inline-block;
@@ -391,27 +427,31 @@ hr:nth-child(2){
 }
 .termos-e-privacidade ul{
     display: flex;
-    margin: 1rem 0 .2rem 0;
+    margin: 1rem 0 0 0;
 }
 .termos-e-privacidade ul li a{
     color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
 }
 .dir-autorais{
     color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 /*************************** MEDIA QUERIES ***************************/
 @media(max-width: 1180px) {
+    .sociais-icones ul{
+        padding-left: 1.5rem;
+    }
     .menu-cabecalho{
         flex-direction: column;
     }
     .btn-informa{
         margin: 1rem 0;
-    }
-    .lanca-premio{
-        padding-top: 17.2rem;
     }
     .lista-itens-menu li{
         margin-right: .5rem;
@@ -420,10 +460,15 @@ hr:nth-child(2){
         border: none;
         border-right: 1px solid #ffffff;
     }
-    .lista-itens-menu li a:not(:last-child){
+    .lista-itens-menu .link-3{
         border-right: none;
     }
-
+    .lanca-premio{
+        padding-top: 17.2rem;
+    }
+    .lanca-juris{
+        line-height: 2rem;
+    }
 }
 
 @media(max-width: 990px){
@@ -466,10 +511,23 @@ hr:nth-child(2){
         justify-content: center;
     }
     .premio-artigo{
-        padding-top: 3rem;
+        padding-top: 5rem;
+        padding-right: 2rem;
+    }
+    .lanca-premio .seara-juridica{
+        margin-right: 0;
     }
     .banner-premio{
         padding-top: 5.1rem;
+    }
+    .produtos-lista{
+        grid-template-columns: 1fr;
+    }
+    .informacoes-cadastro{
+        flex-direction: column;
+    }
+    .ser-avisado{
+        margin-top: 2rem;
     }
     .logo-icone-seguro{
         flex-direction: column;
@@ -479,7 +537,7 @@ hr:nth-child(2){
     .logo-icone-seguro ul{
         justify-content: center;
         align-self: center;
-        padding-left: 4.7rem;
+        padding-left: 5.6rem;
     }
 }
 
@@ -504,29 +562,35 @@ hr:nth-child(2){
     }
     .lanca-premio{
         padding-left: 2rem;
-        padding-right: 2rem;
-        padding-top: 14rem;
+        padding-right: 0;
+        padding-top: 13rem;
     }
     .lanca-premio .seara-juridica{
         margin-right: auto;
         border-left: 1px solid #ffffff;
         border-right: 1px solid #ffffff;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding: 0 1rem;
+    }
+    .lanca-juris i{
+        display: none;
     }
     .lanca-juris{
         text-align: center;
         font-size: 22px;
         font-weight: 500;
         line-height: 1.5rem;
-        padding-top: .8rem;
-        padding-left: .8rem;
+        padding: .8rem 0 .8rem .8rem;
+        margin-bottom: 2.5rem;
         background-color: #031941;
         border-top-left-radius: 4rem;
         border-bottom-right-radius: 4rem;
     }
+    .premia-artigo-seta i{
+        display: none;
+    }
     .banner-premio{
         margin-top: -1rem;
+        padding-right: 2rem;
     }
     .produtos-lista{
         grid-template-columns: 1fr;
@@ -567,10 +631,15 @@ hr:nth-child(2){
         display: none;
     }
     .logo-icone-seguro ul{
-        padding-left: 5rem;
+        padding-left: 6rem;
+        padding-bottom: .5rem;
     }
     .logo-icone-seguro ul li{
         margin-right: none;
+    }
+    .seguro-cadeado{
+        margin-bottom: -1rem;
+        border-top: 1px solid #ffffff;
     }
     .termos-e-privacidade{
         padding: 0 3rem;
