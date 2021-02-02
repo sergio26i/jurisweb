@@ -77,9 +77,6 @@ body{
     width: 60px;
     height: 65px;
     align-self: center;
-    border: 3px solid #2b9c95;
-    border-radius: 5rem;
-    margin-bottom: 1rem;
 }
 .termos-titulo{
     color: #2b9c95;
@@ -120,12 +117,17 @@ body{
 .logo-icone-seguro{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 2rem;
+}
+.logotipo-rodape img{
+    width: 150px;
+    margin: 0 auto;
 }
 .logo-icone-seguro ul{
     display: flex;
-    padding-right: 3.5rem;
+    padding-right: 4.5rem;
 }
 .logo-icone-seguro ul li{
     display: inline-block;
@@ -152,23 +154,28 @@ hr:nth-child(2){
 }
 .termos-e-privacidade ul{
     display: flex;
-    margin: 1rem 0 .2rem 0;
+    margin: 1rem 0 0 0;
 }
 .termos-e-privacidade ul li a{
     color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
 }
 .dir-autorais{
     color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
+
 /****************************** Rodapé *******************************/
 
 /*************************** MEDIA QUERIES ***************************/
 
 @media(max-width: 1180px){
     .servicos-e-termos{
-        padding: 11rem 2rem 2rem 2rem;
+        padding: 9rem 2rem 2rem 2rem;
     }
 }
 
@@ -178,16 +185,23 @@ hr:nth-child(2){
     }
     .logo-icone-seguro{
         flex-direction: column;
-        justify-content: center;
+    }
+    .logotipo-rodape img{
+        border-bottom: 1px solid #ffffff;
     }
     hr{
         display: none;
     }
     .logo-icone-seguro ul{
-        padding-left: 5rem;
+        padding-left: 6rem;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid #ffffff;
     }
     .logo-icone-seguro ul li{
         margin-right: none;
+    }
+    .seguro-cadeado{
+        margin-bottom: -1rem;
     }
     .termos-e-privacidade{
         padding: 0 3rem;
@@ -206,3 +220,5 @@ hr:nth-child(2){
         padding: 0 3rem 2rem 3rem;
     }
 }
+
+/**********************************************************/
