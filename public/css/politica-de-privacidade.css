@@ -89,11 +89,12 @@ body{
     margin: 0 auto 2rem auto;
     padding-bottom: .5rem;
     border-bottom: 3px solid #d37f4e;
-    text-align: center;
+    text-align: justify;
 }
 .privacidade-parag{
     margin-bottom: 1.7rem;
     line-height: 1.7rem;
+    text-align: justify;
 }
 
 /****************** Divisória de Politica de Privacidade ******************/
@@ -113,7 +114,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 9.3rem;
 }
 .logotipo-rodape img{
     width: 150px;
@@ -170,6 +171,9 @@ hr:nth-child(2){
 @media(max-width: 1180px){
     .privacidade-politica{
         padding: 9rem 2rem 2rem 2rem;
+    }
+    .logo-icone-seguro{
+        padding: 0 1.5rem;
     }
 }
 

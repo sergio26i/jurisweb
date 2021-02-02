@@ -115,12 +115,17 @@ body{
 .logo-icone-seguro{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 5.2rem;
+}
+.logotipo-rodape img{
+    width: 150px;
+    margin: 0 auto;
 }
 .logo-icone-seguro ul{
     display: flex;
-    padding-right: 3.5rem;
+    padding-right: 4.5rem;
 }
 .logo-icone-seguro ul li{
     display: inline-block;
@@ -147,15 +152,19 @@ hr:nth-child(2){
 }
 .termos-e-privacidade ul{
     display: flex;
-    margin: 1rem 0 .2rem 0;
+    margin: 1rem 0 0 0;
 }
 .termos-e-privacidade ul li a{
     color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
 }
 .dir-autorais{
     color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 /************************ Rodapé ****************************/
@@ -168,7 +177,7 @@ hr:nth-child(2){
     }
 }
 
-@media(max-width: 500px){
+@media(max-width: 690px){
     .sociais-icones ul{
         padding-left: 1.5rem;
 
@@ -183,14 +192,22 @@ hr:nth-child(2){
     .logo-icone-seguro{
         flex-direction: column;
     }
+    .logotipo-rodape img{
+        border-bottom: 1px solid #ffffff;
+    }
     hr{
         display: none;
     }
     .logo-icone-seguro ul{
-        padding-left: 5rem;
+        padding-left: 6rem;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid #ffffff;
     }
     .logo-icone-seguro ul li{
         margin-right: none;
+    }
+    .seguro-cadeado{
+        margin-bottom: -1rem;
     }
     .termos-e-privacidade{
         padding: 0 3rem;

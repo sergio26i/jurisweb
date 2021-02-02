@@ -127,6 +127,7 @@ body{
     font-size: 15px;
     font-weight: 300;
     line-height: 1.7rem;
+    text-align: justify;
 }
 .premia-artigo-seta{
     display: flex;
@@ -396,7 +397,7 @@ button[type=submit]:hover{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 5.2rem;
 }
 .logotipo-rodape img{
     width: 150px;
@@ -504,6 +505,9 @@ hr:nth-child(2){
     }
     .preencha-campos .preencha-campos-1{
         color: #ffffff;
+    }
+    .logo-icone-seguro{
+        padding: 0 1.5rem;
     }
 }
 

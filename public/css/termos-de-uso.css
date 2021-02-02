@@ -96,10 +96,12 @@ body{
 .termos-parag{
     margin-bottom: 1.7rem;
     line-height: 1.7rem;
+    text-align: justify;
 }
 .termos-parag2{
     margin-bottom: 1.7rem;
     line-height: 1.7rem;
+    text-align: justify;
 }
 
 /****************** Divisória de Termos & Serviços ******************/
@@ -119,7 +121,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 9.3rem;
 }
 .logotipo-rodape img{
     width: 150px;
@@ -176,6 +178,9 @@ hr:nth-child(2){
 @media(max-width: 1180px){
     .servicos-e-termos{
         padding: 9rem 2rem 2rem 2rem;
+    }
+    .logo-icone-seguro{
+        padding: 0 1.5rem;
     }
 }
 
