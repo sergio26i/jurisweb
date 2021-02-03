@@ -3,16 +3,26 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const Sequelize = require("sequelize");
-const Contact = require("./models/Contact")
+const Contact = require("./models/Contact");
 const { check, validationResult } = require("express-validator");
-const app = express();
+const https = require('https');
 const path = require("path");
 const port = process.env.PORT || 3000;
+const app = express();
+
+// Middleware //
+
+app.use((req, res, next) => { //Cria um middleware onde todas as requests passam por ele 
+    if ((req.headers["x-forwarded-proto"] || "").endsWith("http")) //Checa se o protocolo informado nos headers é HTTP 
+        res.redirect(`https://${req.headers.host}${req.url}`); //Redireciona pra HTTPS 
+    else //Se a requisição já é HTTPS 
+        next(); //Não precisa redirecionar, passa para os próximos middlewares que servirão com o conteúdo desejado 
+});
 
 // Body-Parser //
 
-app.use(bodyParser.urlencoded({extended: false}))
-app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 
 // EJS //
 
@@ -50,7 +60,7 @@ app.post("/", function(req, res){
 // Servidor //
 
 app.listen(port, function () {
-    console.log('Umbler listening on port %s', port);
+    console.log('Umbler listening at https://localhost:3000', port);
 });
 
 

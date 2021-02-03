@@ -19,7 +19,7 @@ const sequelize = new Sequelize({
 sequelize.authenticate().then(function(){
     console.log("Conexão realizada com sucesso");
 }).catch(function(err){
-    console.log("Erro ao relizar a conexão com BD: " + err);
+    console.log("Erro ao realizar a conexão com BD: " + err);
 });
 
 module.exports = {
