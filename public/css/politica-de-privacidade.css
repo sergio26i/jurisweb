@@ -181,6 +181,9 @@ hr:nth-child(2){
     .sociais-icones ul{
         margin-left: 1.3rem;
     }
+    .privacidade-politica{
+        padding: 9rem 1rem 2rem 1rem;
+    }
     .logo-icone-seguro{
         flex-direction: column;
     }

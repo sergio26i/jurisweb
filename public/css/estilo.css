@@ -520,11 +520,13 @@ hr:nth-child(2){
         justify-content: center;
     }
     .premio-artigo{
-        padding-top: 5rem;
-        padding-right: 2rem;
+        padding-top: 5rem; 
     }
     .lanca-premio .seara-juridica{
         margin-right: 0;
+    }
+    .premia-artigo-seta i{
+        display: none;
     }
     .banner-premio{
         padding-top: 5.1rem;
@@ -536,7 +538,10 @@ hr:nth-child(2){
         flex-direction: column;
     }
     .ser-avisado{
-        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+    form button[type=submit]{
+        margin: 0 7rem;
     }
 }
 
@@ -560,9 +565,7 @@ hr:nth-child(2){
         border-right: none;
     }
     .lanca-premio{
-        padding-left: 2rem;
-        padding-right: 0;
-        padding-top: 13rem;
+        padding: 13rem 1rem 5rem 1rem;
     }
     .lanca-premio .seara-juridica{
         margin-right: auto;
@@ -584,16 +587,12 @@ hr:nth-child(2){
         border-top-left-radius: 4rem;
         border-bottom-right-radius: 4rem;
     }
-    .premia-artigo-seta i{
-        display: none;
-    }
     .banner-premio{
         margin-top: -1rem;
-        padding-right: 2rem;
     }
     .produtos-lista{
         grid-template-columns: 1fr;
-        padding: 2rem 2rem;
+        padding: 2rem 1rem;
     }
     .premia-eventos{
         margin-bottom: .3rem;
@@ -616,12 +615,19 @@ hr:nth-child(2){
     .informacoes-cadastro{
         flex-direction: column;
         justify-content: center;
+        margin: 0 auto;
+        padding: 2rem 1rem;
     }
     .preencha-campos{
-        justify-content: center;
         margin-bottom: 1.3rem;
         padding-bottom: 1.5rem;
         border-bottom: 3px solid #f3d96c;
+    }
+    .ser-avisado{
+        padding-top: 0;
+    }
+    form button[type=submit]{
+        margin: 0 5.2rem;
     }
     .logo-icone-seguro{
         flex-direction: column;
