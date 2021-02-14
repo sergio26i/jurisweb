@@ -1,5 +1,4 @@
 const Sequelize = require("sequelize");
-
 const sequelize = new Sequelize({
     dialect: "mysql",
     host: "mysql742.umbler.com", 

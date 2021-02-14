@@ -3,9 +3,9 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const Sequelize = require("sequelize");
-const Contact = require("./models/Contact");
+const Contact = require("./models/Contact")
 const { check, validationResult } = require("express-validator");
-const https = require('https');
+const https = require("https");
 const path = require("path");
 const port = process.env.PORT || 3000;
 const app = express();
@@ -34,19 +34,19 @@ app.use(express.static(path.join(__dirname + "/public")));
 
 // Routes //
 
-app.get("/", function(req, res){
+app.get("/", (req, res, next) => {
     res.render("index")
 });
 
-app.get("/termos-de-uso", function(req, res){
+app.get("/termos-de-uso", (req, res, next) => {
     res.render("termos-de-uso")
 });
 
-app.get("/politica-de-privacidade", function(req, res){
+app.get("/politica-de-privacidade", (req, res, next) => {
     res.render("politica-de-privacidade")
 });
 
-app.post("/", function(req, res){
+app.post("/", (req, res, next) => {
     Contact.create({
         name: req.body.name,
         email: req.body.email
@@ -57,10 +57,12 @@ app.post("/", function(req, res){
     })
 });
 
+
+
 // Servidor //
 
 app.listen(port, function () {
-    console.log('Umbler listening at https://localhost:3000', port);
+    console.log('Umbler listening at https://localhost:', port);
 });
 
 
