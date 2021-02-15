@@ -494,14 +494,14 @@ hr:nth-child(2){
         padding-top: 5.5rem;
     }
     .produtos-lista{
-        padding: 2rem 2rem;
+        padding: 2rem;
     }
     .produtos-lista{
         grid-template-columns: 1fr 1fr;
     }
     .informacoes-cadastro{
         margin: 0 auto;
-        padding: 2rem 2rem 2rem 2rem;
+        padding: 2rem;
     }
     .preencha-campos .preencha-campos-1{
         color: #ffffff;
@@ -539,9 +539,6 @@ hr:nth-child(2){
     }
     .ser-avisado{
         padding-top: 2rem;
-    }
-    form button[type=submit]{
-        margin: 0 7rem;
     }
 }
 
@@ -664,6 +661,39 @@ hr:nth-child(2){
     }
     .dir-autorais{
         padding: 0 3rem 2rem 3rem;
+    }
+}
+
+@media(max-width: 320px){
+    .menu-cabecalho{
+        padding: 0.5rem 1rem;
+    }   
+    input[type=name]{
+        color: #ffffff;
+        background-color: #1c98c3;
+        font-family: 'prompt';
+        font-weight: 300;
+        border: 1px solid #ffffff;
+        border-radius: 2rem;
+        padding: 0.3rem 3.5rem;
+        outline: none;
+    }
+    input[type=email]{
+        color: #ffffff;
+        background-color: #1c98c3;
+        font-family: 'prompt';
+        font-weight: 300;
+        border: 1px solid #ffffff;
+        border-radius: 2rem;
+        padding: 0.3rem 3.5rem;
+        outline: none;
+    }
+    .logo-icone-seguro ul{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .termos-e-privacidade{
+        padding: 0 2rem;
     }
 }
 

@@ -241,3 +241,16 @@ hr:nth-child(2){
     }
 }
 
+@media(max-width: 320px){
+    .logo-icone-seguro ul{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .termos-e-privacidade{
+        padding: 0 2rem;
+    }
+}
+
+
+/**********************************************************/
+
