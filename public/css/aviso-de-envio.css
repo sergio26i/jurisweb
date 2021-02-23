@@ -82,7 +82,7 @@ body{
     flex-direction: column;
     background-color: #2b9c95;
     padding: 4rem 3rem;
-    box-shadow: 2px 2px 2px 2px rgba(0.1, 0.1, 0.1, 0.1);;
+    box-shadow: 2px 2px 2px 2px rgba(148, 148, 148, 0.1);;
 }
 .envelope{
     display: flex;
@@ -166,6 +166,12 @@ hr:nth-child(2){
 }
 .termos-e-privacidade ul li a{
     color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+}
+.dados-empresa{
+    color: #ffffff;
+    text-align: center;
     font-size: 12px;
     font-weight: 300;
 }

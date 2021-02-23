@@ -156,6 +156,12 @@ hr:nth-child(2){
     font-size: 12px;
     font-weight: 300;
 }
+.dados-empresa{
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+}
 .dir-autorais{
     color: #ffffff;
     font-size: 12px;
